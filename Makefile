@@ -1,7 +1,7 @@
 YML	= srcs/docker-compose.yml
 
 all:
-	docker-compose -p "PYTHON" -f $(YML) up --build
+	docker-compose -f $(YML) up --build
 
 down:
 	docker-compose -f $(YML) down

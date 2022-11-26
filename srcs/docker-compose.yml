@@ -1,9 +1,9 @@
 version: "3.8"
 services:
-  python:
-    container_name: python
-    image: python
-    build: ./python
+  jupyter:
+    container_name: jupyter
+    image: jupyter
+    build: ./jupyter/minimal-notebook
     ports:
       - "8888:8888"
     volumes:
